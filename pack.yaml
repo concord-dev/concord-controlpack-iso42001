@@ -1,0 +1,17 @@
+apiVersion: concord.dev/v1
+kind: ControlPack
+metadata:
+  id: iso42001
+  name: iso42001
+  version: v0.1.0
+  framework_label: ISO/IEC 42001
+spec:
+  controls:
+    - ISO42001-6.1
+    - ISO42001-7.4
+    - ISO42001-8.2
+  evidence_sources:
+    - source: github
+      version: ">=v0.1.0,<v1.0.0"
+    - source: mlflow
+      version: ">=v0.1.0,<v1.0.0"
